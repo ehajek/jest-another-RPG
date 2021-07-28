@@ -14,10 +14,3 @@ test('creates a random potion object', () => {
   expect(potion.name.length).toBeGreaterThan(0);
   expect(potion.value).toEqual(expect.any(Number));
 });
-
-
-test("gets player's health value", () => {
-  const player = new Player('Dave');
-
-  expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()));
-});
